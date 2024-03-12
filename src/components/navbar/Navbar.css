@@ -1,0 +1,138 @@
+
+.navbar {
+    background: var(--secondary-color);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top: 10px;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.4);
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    height: 90%;
+    text-align: center;
+  }
+
+  #icon{
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+
+  #link{
+    text-decoration: none;
+  }
+
+  #logo{
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    
+  }
+
+  .logo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    /* height: 100%; */
+    
+  }
+
+  #logo:hover{
+    color: #fff; 
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    transition: text-shadow 0.2s;
+  }
+
+  .icon{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+  }
+
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-links {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-links:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+  
+
+  @media screen and (max-width: 960px) {
+    .nav-menu {
+      display: grid;
+      grid-template-columns: auto;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      width: 200px;
+      height: auto;
+      background: #333;
+      z-index: 1;
+
+      display: none;
+    }
+  
+    .nav-menu.active {
+      display: block;
+    }
+  
+    .nav-item {
+      margin: 0;
+    }
+  
+    .nav-links {
+      padding: 20px;
+    }
+  
+    .navbar-container {
+      flex-direction: column;
+    }
+  }
+  

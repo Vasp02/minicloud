@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-
+import SignUpPage from './pages/signup/Signup';
+import Navbar from './components/navbar/Navbar';
+import LoginPage from './pages/login/Login';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import HomePage from './pages/home/HomePage';
+import CloudPage from './pages/cloud/CloudPage';
+import AccountPage from './pages/account/AccountPage';
+import AdminPage from './pages/admin/AdminPage';
+import AdminAuth from './pages/admin/AdminAuth';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/login" element={<LoginPage />} /> 
+          <Route path="/cloud" element={<CloudPage />} /> 
+          <Route path="/account" element={<AccountPage />} /> 
+          <Route path="/admin" element={<AdminPage />} /> 
+          <Route path="/adminauth" element={<AdminAuth />} /> 
+        </Routes>
+      </>
+      
+
+    
   );
 }
 

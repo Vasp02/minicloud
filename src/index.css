@@ -5,9 +5,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(23,23,24);
+  background: linear-gradient(4deg, var(--primary-color-lower) 0%, var(--primary-color) 100%);
+  background-attachment: fixed; /* Add this line */
+  background-size: cover; /* Add this line */
+  min-height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --primary-color: #332d3a;
+  --primary-color-lower: #131117;
+  --secondary-color: #17182c;
+  --secondary-color-lower: #6c757d;
+  --highlight-color: #988597;
+}
+

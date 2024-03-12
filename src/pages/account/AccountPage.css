@@ -1,0 +1,35 @@
+.container {
+    max-width: 600px; 
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5; 
+    color: #333; 
+  }
+  
+  .accountInfo {
+    margin-bottom: 20px;
+  }
+  
+  .infoLabel {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .infoValue {
+    margin-bottom: 15px; 
+  }
+  
+  .dashboardStats {
+    padding: 10px;
+    background-color: #ddd; 
+    border-radius: 4px;
+  }
+  
+  .heading {
+    text-align: center;
+    color: #333; 
+    margin-bottom: 20px; 
+  }

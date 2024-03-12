@@ -1,0 +1,33 @@
+
+.round-button {
+    border: none;
+    outline: none;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color-lower); 
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .round-button:hover {
+    background-color: var(--highlight-color); 
+  }
+  
+  .round-button svg {
+    fill: white; 
+    width: 24px; 
+    height: 24px; 
+  }
+
+  .glow-on-hover {
+    transition: filter 0.3s ease;
+    filter: drop-shadow(0 0 0 transparent);
+}
+
+.glow-on-hover:hover {
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)); 
+}

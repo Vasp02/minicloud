@@ -1,0 +1,24 @@
+
+.rectangular-button {
+    border: none;
+    outline: none;
+    width: 60px; 
+    height: 30px; 
+    border-radius: 0px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color-lower); 
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .rectangular-button:hover {
+    background-color: var(--highlight-color); 
+  }
+  
+  .rectangular-button svg {
+    fill: white; 
+    width: 18px; 
+    height: 16px; 
+  }
