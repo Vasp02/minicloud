@@ -10,6 +10,6 @@ Minicloud is a full-stack cloud application designed for secure file storage. It
 - Security implementations like AES file encryption and dynamic decryption for files, JWT Token for authentication.
 - Utilizes JpaRepository, Spring Data JPA, and Hibernate for flexible data management, enabling database customization without modifications
 
-- ![alt text]("./pic.JPEG")
+- ![alt text]("./pic.JPG")
 
 
